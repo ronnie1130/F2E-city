@@ -757,6 +757,10 @@ table {
     border: 0;
     color: #6c757d; }
 
+@media (max-width: 992px) {
+  .sight__info {
+    padding-left: 50px;
+    padding-right: 50px; } }
 .sight__info-detail {
   margin-left: 30px; }
 .sight__info-subtitle {
@@ -1030,13 +1034,13 @@ table {
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url(../../../assets/image/banner01.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url("../image/banner01.jpg");
     height: 100vh;
     width: 100%; }
   .header.food {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../../assets/image/banner02.jpg");
+    background-image: url("../image/banner02.jpg");
     height: 100vh;
     width: 100%;
     margin: 0 auto; }
@@ -1047,7 +1051,7 @@ table {
   .header.hotel {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../../assets/image/banner03.jpg");
+    background-image: url("../image/banner03.jpg");
     height: 100vh;
     width: 100%;
     margin: 0 auto; }
