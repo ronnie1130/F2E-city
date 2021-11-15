@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/bootstrap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: 蘋方;
+        src: url(assets/font/苹方黑体-准-繁.ttf);
+      }
+
+      body {
+        font-family: '蘋方', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header food">
+      <div class="header__navbar">
+        <a href="index.html" class="header__logo">TAIWAN TRAVEL</a>
+
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <a href="index.html" class="header__nav-link">旅遊情報</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="sight.html" class="header__nav-link">景點查詢</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="food.html" class="header__nav-link">美食推薦</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="hotel.html" class="header__nav-link">旅宿資訊</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">節慶活動</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__img-box">
+        <img src="./assets/image/taiwan_logo_black.svg" alt="" />
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <section class="content food">
+      <div class="container">
+        <div class="food__des">
+          <p class="food__des-para">
+            民以食為天的臺灣，幾乎是三步一小吃店，五步一大餐廳，可說是應有盡有。近年來由於工商業的發展快速，臺灣吃的文化除了傳統的中式飲食方式外，也發展到中式速食連鎖店的經營方式，使得臺灣吃的藝術變得更加繁複。
+          </p>
+          <p class="food__des-para">
+            因臺灣地處世界文化交流的總匯，世界各國的飲食也紛紛在臺灣出現，美國的漢堡、義大利的披薩、日本的生魚片、德國的豬腳、瑞士的乳酪等等，包羅萬象，讓臺灣著實成為饕家的天堂。而臺灣獨有的本土料理，風靡全球，嚐味一次，必將永生難忘。
+          </p>
+          <div class="food__des-img mx-auto">
+            <img
+              src="./assets/image/taiwan_logo_black.svg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="food__des-input text-center">
+            <p class="food__des-title d-inline-block">
+              您想找哪個地方的美食呢？
+            </p>
+            <div class="header__input-group d-inline-block">
+              <select name="area" id="area">
+                <option value="north">北部地區</option>
+                <option value="central">中部地區</option>
+                <option value="south">南部地區</option>
+                <option value="east">東部地區</option>
+                <option value="out">離島地區</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="food__detail mx-auto">
+        <ul class="d-flex">
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(1).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>阿興滷味店</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(2).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>日船章魚小丸子</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(3).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>幸福堂黑糖珍珠鮮奶</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(4).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>漢來上海湯包</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(5).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>馬可先生健康烘焙</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(6).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>小木屋鬆餅</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(7).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>晨光人文咖啡館</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(8).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>老賊壽司</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(9).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>萬華甜不辣</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(10).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>精誠路麻辣乾麵</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(11).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>森川丼丼梅亭橫町</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(12).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>牛B葫蘆王</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(13).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>NAMI米熱狗</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(14).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>品鑫大腸包小腸</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(15).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>春梅家</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="food__detail-img">
+              <img
+                src="./assets/image/food/food(16).jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="mask">
+                <div class="food__detail-info">
+                  <h4>夏蛋</h4>
+                  <p>臺北市士林區福港街149巷10號</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        TaiwanTravel © 2021 Designer Vum. Developer Veronica. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+</html>

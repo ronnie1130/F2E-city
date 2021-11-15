@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/bootstrap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: 蘋方;
+        src: url(assets/font/苹方黑体-准-繁.ttf);
+      }
+
+      body {
+        font-family: '蘋方', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header landing">
+      <div class="header__navbar">
+        <a href="index.html" class="header__logo">TAIWAN TRAVEL</a>
+
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <a href="index.html" class="header__nav-link">旅遊情報</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="sight.html" class="header__nav-link">景點查詢</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="food.html" class="header__nav-link">美食推薦</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="hotel.html" class="header__nav-link">旅宿資訊</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">節慶活動</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__img-box">
+        <img src="./assets/image/taiwan_logo_white.svg" alt="" />
+      </div>
+
+      <div class="input">
+        <div class="input__group">
+          <select name="area" id="area">
+            <option value="north">北部地區</option>
+            <option value="central">中部地區</option>
+            <option value="south">南部地區</option>
+            <option value="east">東部地區</option>
+            <option value="out">離島地區</option>
+          </select>
+        </div>
+        <div class="input__group">
+          <select name="area" id="area">
+            <option>台北市</option>
+            <option value=""></option>
+          </select>
+        </div>
+        <a href="#" class="btn-cus rwd">SEARCH</a>
+      </div>
+    </header>
+    <!-- end of header -->
+  </body>
+</html>

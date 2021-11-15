@@ -1,0 +1,128 @@
+.header {
+  padding: 38px;
+  background-color: $primary-color-light;
+  height: 90px;
+
+  &.landing {
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
+      url(../../../assets/image/banner01.jpg);
+
+    height: 100vh;
+    width: 100%;
+  }
+  &.food {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/image/banner02.jpg');
+
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+
+    & .header__logo,
+    & .header__nav-link {
+      color: $primary-font-color;
+    }
+
+    & .header__img-box {
+      height: 100%;
+    }
+  }
+  &.hotel {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/image/banner03.jpg');
+
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+
+    & .header__logo,
+    & .header__nav-link {
+      color: $primary-font-color;
+    }
+
+    & .header__img-box {
+      height: 100%;
+    }
+  }
+  &__navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__logo {
+    font-family: 'EB Garamond', serif;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 22px;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    &-item {
+      list-style: none;
+      margin-left: 60px;
+      @media (max-width: 992px) {
+        margin-left: 20px;
+      }
+    }
+    &-link {
+      font-weight: 400;
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      transition: color 250ms;
+      letter-spacing: 1.26px;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &__img-box {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      height: 58%;
+    }
+    @media (max-width: 576px) {
+      height: 55%;
+    }
+    @media (max-width: 450px) {
+      height: 53%;
+    }
+
+    & img {
+      width: 33%;
+      @media (max-width: 768px) {
+        width: 50%;
+      }
+      @media (max-width: 576px) {
+        width: 80%;
+      }
+    }
+  }
+
+  &__banner {
+    width: 100%;
+    height: 160px;
+    background-image: url(../image/Banner04.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    & img {
+      width: 100%;
+    }
+  }
+}

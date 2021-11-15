@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/bootstrap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: 蘋方;
+        src: url(assets/font/苹方黑体-准-繁.ttf);
+      }
+
+      body {
+        font-family: '蘋方', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header hotel">
+      <div class="header__navbar">
+        <a href="index.html" class="header__logo">TAIWAN TRAVEL</a>
+
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <a href="index.html" class="header__nav-link">旅遊情報</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="sight.html" class="header__nav-link">景點查詢</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="food.html" class="header__nav-link">美食推薦</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="hotel.html" class="header__nav-link">旅宿資訊</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">節慶活動</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__img-box">
+        <img src="./assets/image/taiwan_logo_black.svg" alt="" />
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <section class="content hotel">
+      <div class="container">
+        <div class="hotel__form">
+          <div class="row">
+            <div class="col-5 position-relative hotel__form-container">
+              <div class="background"></div>
+              <img
+                src="https://images.unsplash.com/photo-1564490292125-2e3c78a0ef44?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80"
+                alt=""
+                class="hotel__form-img"
+              />
+            </div>
+            <div class="col-7 hotel__form-input">
+              <h3 class="hotel__form-title">
+                <i class="fas fa-hotel me-2"></i>快速找到您感興趣的住宿點
+              </h3>
+
+              <div class="d-flex mb-4">
+                <div class="input__group">
+                  <select name="area" id="area">
+                    <option>台北市</option>
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex mb-4">
+                <div class="input-date-group">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="請選擇開始日期"
+                  /><i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="input-date-group">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="請選擇結束日期"
+                  /><i class="far fa-calendar-alt"></i>
+                </div>
+              </div>
+              <div class="d-flex mb-4 align-items-center">
+                <div class="input__group">
+                  <select name="area" id="area">
+                    <option value="oneRoom">一間</option>
+                    <option value="twoRoom">兩間</option>
+                    <option value="threeRoom">三間</option>
+                    <option value="fourRoom">四間</option>
+                  </select>
+                </div>
+                <div class="input__group">
+                  <select name="area" id="area">
+                    <option value="onePpl">一人</option>
+                    <option value="twoPpl">兩人</option>
+                    <option value="threePpl">三人</option>
+                    <option value="fourPpl">四人</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex mb-4">
+                <div class="input__search">
+                  <input type="text" name="" id="" placeholder="關鍵字查詢" />
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+              <a href="#" class="btn-cus rwd">SEARCH</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hotel__des">
+          <div class="hotel__des-input text-center py-5">
+            <p class="hotel__title">熱門飯店</p>
+          </div>
+          <div class="responsive hotel">
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">飯店名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">飯店名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">飯店名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">飯店名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">飯店名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">飯店名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">飯店名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hotel__des-input text-center py-5">
+            <p class="hotel__title">熱門民宿</p>
+          </div>
+          <div class="responsive hotel">
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">民宿名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">民宿名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">民宿名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">民宿名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">民宿名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">民宿名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">民宿名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hotel__des-input text-center py-5">
+            <p class="hotel__title">熱門旅館</p>
+          </div>
+          <div class="responsive hotel">
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">旅館名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">旅館名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">旅館名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">旅館名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">旅館名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">旅館名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+            <div class="sight__slider-card">
+              <img
+                src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                alt=""
+                class="img-fluid"
+              />
+
+              <div class="card__info">
+                <h4 class="card__info-title">旅館名稱01</h4>
+                <div class="d-flex align-items-center">
+                  <span class="rate">1325</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        TaiwanTravel © 2021 Designer Vum. Developer Veronica. All rights
+        reserved.
+      </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.responsive').slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          prevArrow:
+            "<button type='button' class='slick-prev pull-left'><i class='fas fa-chevron-left' ></button>",
+          nextArrow:
+            "<button type='button' class='slick-next pull-right'><i class='fas fa-chevron-right' ></button>",
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        })
+      })
+    </script>
+  </body>
+</html>

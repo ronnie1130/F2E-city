@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/bootstrap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: 蘋方;
+        src: url(assets/font/苹方黑体-准-繁.ttf);
+      }
+
+      body {
+        font-family: '蘋方', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="header__navbar">
+        <a href="index.html" class="header__logo">TAIWAN TRAVEL</a>
+
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <a href="index.html" class="header__nav-link">旅遊情報</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="sight.html" class="header__nav-link">景點查詢</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="food.html" class="header__nav-link">美食推薦</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="hotel.html" class="header__nav-link">旅宿資訊</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">節慶活動</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="header__banner"></div>
+    <!-- end of header -->
+
+    <section class="content">
+      <div class="container">
+        <div class="content__title">
+          首頁 <span class="mx-2">></span><span class="spec">景點查詢</span>
+        </div>
+        <h3 class="content__carousel-title">熱門景點</h3>
+        <div class="content__carousel">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1516712499938-329b334ac9bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1555424221-250de2a343ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1536247493839-f8ede5f206db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1515488701809-e67a02ced1b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1517933981816-1f2d0c2ffc0d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1564758757725-602ad0234578?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="content__main">
+          <div class="row gx-5">
+            <div class="col-4">
+              <div class="sidebar">
+                <div class="search-box">
+                  <input type="text" placeholder="關鍵字查詢" />
+                  <a class="search-btn">
+                    <img src="./assets/image/icon/search.svg" alt="" />
+                  </a>
+                </div>
+                <div class="filter__box">
+                  <h4 class="sidebar__title">篩選內容</h4>
+                  <div class="sidebar__filter-title">地區/縣市</div>
+                  <div class="sidebar__select-box">
+                    <select name="area" id="area" class="sidebar__select">
+                      <option value="out">離島地區</option>
+                    </select>
+                  </div>
+                  <div class="sidebar__select-box">
+                    <select name="county" id="county" class="sidebar__select">
+                      <option value="all">全部</option>
+                    </select>
+                  </div>
+
+                  <hr />
+                  <div class="sidebar__filter-title">類別</div>
+                  <div class="checkbox-group">
+                    <input type="checkbox" name="cate-all" id="cate-all" />
+                    <label for="cate-all">全部</label>
+                  </div>
+                  <div class="checkbox-group">
+                    <input type="checkbox" name="nature" id="nature" />
+                    <label for="nature">自然風景</label>
+                  </div>
+                  <div class="checkbox-group">
+                    <input type="checkbox" name="history" id="history" />
+                    <label for="history">歷史文化</label>
+                  </div>
+                  <div class="checkbox-group">
+                    <input
+                      type="checkbox"
+                      name="sightseeing"
+                      id="sightseeing"
+                    />
+                    <label for="sightseeing">觀光遊憩</label>
+                  </div>
+                  <div class="checkbox-group">
+                    <input type="checkbox" name="religion" id="religion" />
+                    <label for="religion">宗教巡禮</label>
+                  </div>
+                  <div class="checkbox-group">
+                    <input
+                      type="checkbox"
+                      name="night-market"
+                      id="night-market"
+                    />
+                    <label for="night-market">夜市商圈</label>
+                  </div>
+                  <div class="checkbox-group">
+                    <input type="checkbox" name="art" id="art" />
+                    <label for="art">文藝之旅</label>
+                  </div>
+                  <div class="text-center">
+                    <a href="#" class="btn-cus mt-2">SEARCH</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <a class="sort">
+                <img src="./assets/image/icon/arrangement.svg" alt="" />
+                <p>排序：熱門度</p>
+              </a>
+              <a class="card" href="detail.html">
+                <div class="row">
+                  <div class="col-5 overflow-hidden p-0 card__img-container">
+                    <img
+                      src="https://images.unsplash.com/photo-1594238534235-a9d8f63fb4b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+                      alt=""
+                      class="card__img"
+                    />
+                    <div class="mask"></div>
+                  </div>
+                  <div class="col-7 ps-4">
+                    <h3 class="card__title">紫坪</h3>
+                    <div class="card__para">
+                      紫坪位在綠島最南方，從附近的步道，可通往海岸邊的潟湖。此處是由珊瑚礁構成的潮池，也是綠島著名的潟湖所在地，有全綠島最完整的潟湖地形以及珊瑚礁植群，更有茂盛的植物
+                      ......
+                    </div>
+                    <div class="card__info">
+                      <div class="card__info-detail">
+                        <div class="location">
+                          <img
+                            src="./assets/image/icon/site.svg"
+                            alt=""
+                          />臺東縣綠島鄉
+                        </div>
+                        <div class="time">
+                          <img src="./assets/image/icon/time.svg" alt="" />
+                          全天開放
+                        </div>
+                      </div>
+                      <div class="card__info-click">
+                        <img src="./assets/image/icon/click.svg" alt="" />
+                        <span class="rate">1325</span>
+                      </div>
+                    </div>
+                    <div class="cate">
+                      <p>觀光遊憩</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="card" href="detail.html">
+                <div class="row">
+                  <div class="col-5 overflow-hidden p-0 card__img-container">
+                    <img
+                      src="https://images.unsplash.com/photo-1588757336388-e9f9d123b052?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+                      alt=""
+                      class="card__img"
+                    />
+                    <div class="mask"></div>
+                  </div>
+                  <div class="col-7 ps-4">
+                    <h3 class="card__title">紫坪</h3>
+                    <div class="card__para">
+                      紫坪位在綠島最南方，從附近的步道，可通往海岸邊的潟湖。此處是由珊瑚礁構成的潮池，也是綠島著名的潟湖所在地，有全綠島最完整的潟湖地形以及珊瑚礁植群，更有茂盛的植物
+                      ......
+                    </div>
+                    <div class="card__info">
+                      <div class="card__info-detail">
+                        <div class="location">
+                          <img
+                            src="./assets/image/icon/site.svg"
+                            alt=""
+                          />臺東縣綠島鄉
+                        </div>
+                        <div class="time">
+                          <img src="./assets/image/icon/time.svg" alt="" />
+                          全天開放
+                        </div>
+                      </div>
+                      <div class="card__info-click">
+                        <img src="./assets/image/icon/click.svg" alt="" />
+                        <span class="rate">1325</span>
+                      </div>
+                    </div>
+                    <div class="cate">
+                      <p>觀光遊憩</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="card" href="detail.html">
+                <div class="row">
+                  <div class="col-5 overflow-hidden p-0 card__img-container">
+                    <img
+                      src="https://images.unsplash.com/photo-1624527171320-c4783a2217e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+                      alt=""
+                      class="card__img"
+                    />
+                    <div class="mask"></div>
+                  </div>
+                  <div class="col-7 ps-4">
+                    <h3 class="card__title">紫坪</h3>
+                    <div class="card__para">
+                      紫坪位在綠島最南方，從附近的步道，可通往海岸邊的潟湖。此處是由珊瑚礁構成的潮池，也是綠島著名的潟湖所在地，有全綠島最完整的潟湖地形以及珊瑚礁植群，更有茂盛的植物
+                      ......
+                    </div>
+                    <div class="card__info">
+                      <div class="card__info-detail">
+                        <div class="location">
+                          <img
+                            src="./assets/image/icon/site.svg"
+                            alt=""
+                          />臺東縣綠島鄉
+                        </div>
+                        <div class="time">
+                          <img src="./assets/image/icon/time.svg" alt="" />
+                          全天開放
+                        </div>
+                      </div>
+                      <div class="card__info-click">
+                        <img src="./assets/image/icon/click.svg" alt="" />
+                        <span class="rate">1325</span>
+                      </div>
+                    </div>
+                    <div class="cate">
+                      <p>觀光遊憩</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item">
+                    <a
+                      class="page-link pre"
+                      href="sight.html"
+                      tabindex="-1"
+                      aria-disabled="true"
+                      ><i class="fas fa-chevron-left"></i
+                    ></a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="sight.html">1</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item disabled">
+                    <a class="page-link nxt" href="#"
+                      ><i class="fas fa-chevron-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        TaiwanTravel © 2021 Designer Vum. Developer Veronica. All rights
+        reserved.
+      </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.content__carousel').slick({
+          centerMode: true,
+          centerPadding: '400px',
+          slidesToShow: 1,
+          prevArrow:
+            "<button type='button' class='slick-prev pull-left'><i class='fas fa-chevron-left' ></button>",
+          nextArrow:
+            "<button type='button' class='slick-next pull-right'><i class='fas fa-chevron-right' ></button>",
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1,
+              },
+            },
+          ],
+        })
+      })
+    </script>
+  </body>
+</html>
